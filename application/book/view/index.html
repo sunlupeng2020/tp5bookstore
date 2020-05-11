@@ -13,9 +13,9 @@ and open the template in the editor.
     <body>
          <div>
             <table>
-                <tr><td>编号</td><td>书名</td><td>作者</td><td>价格</td> </tr>
+                <tr><td>编号</td><td>书名</td><td>作者</td><td>价格</td><td>类别</td><td>编辑</td> </tr>
                 {foreach $data as $key => $va }
-                <tr><td>{$va.bookid}</td><td>{$va.bookname}</td><td>{$va.bookauthor}</td><td>{$va.bookprice}</td></tr>
+                <tr><td>{$va.bookid}</td><td>{$va.bookname}</td><td>{$va.bookauthor}</td><td>{$va.bookprice}</td><td>{$va.booktype}</td><td><a href="/edit?id={$va.bookid}">编辑</a></td></tr>
                 {/foreach}
             </table>
         </div>

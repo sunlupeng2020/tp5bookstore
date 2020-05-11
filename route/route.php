@@ -21,7 +21,8 @@ Route::get('index/:aa','index/index');
 Route::get('book/:aa','book/index');
 Route::any('add','book/add/index');
 Route::post('insert','book/add/insert');
-
+Route::get('edit','book/edit/index');
+Route::post('update','book/edit/update');
 return [
 
 ];
