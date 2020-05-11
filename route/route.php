@@ -18,7 +18,7 @@ Route::get('user/:id','admin/user/read');
 
 Route::get('hello/:name', 'index/hello');
 Route::get('index/:aa','index/index');
-
+Route::get('book/:aa','book/index');
 
 return [
 

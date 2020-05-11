@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title> 图书列表 </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+         <div>
+            <table>
+                <tr><td>编号</td><td>书名</td><td>作者</td><td>价格</td> </tr>
+                {foreach $data as $key => $va }
+                <tr><td>{$va.bookid}</td><td>{$va.bookname}</td><td>{$va.bookauthor}</td><td>{$va.bookprice}</td></tr>
+                {/foreach}
+            </table>
+        </div>
+        <div>TODO write content</div>
+    </body>
+</html>
