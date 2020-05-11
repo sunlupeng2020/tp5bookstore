@@ -25,5 +25,14 @@ class Add extends Controller
             ];
         Db::table('booktable')->insert($data);         
     }
-
+    public function update(Request $req)
+    {
+        $data=['bookname'=>$req->BookName,
+               'bookauthor'=>$req->BookAuthor,
+               'bookprice'=>$req->BookPrice,
+               'booktype'=>$req->BookType
+            ];
+        $id=$req->bookid;
+        Db::table('booktable')->where('bookid',id)->update($data);
+    }
 }
